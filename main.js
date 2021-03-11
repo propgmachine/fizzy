@@ -1,9 +1,40 @@
-/******************************
- * YOUR CODE GOES RIGHT HERE! *
- ******************************/
+function fizzy(num) {
+  if (num & 5 === 0 && num % 3 !== 0) {
+    return "Buzz";
+  }
+  
+  if (num % 3 === 0 && num % 5 !== 0) {
+    return "Fizz";
+  } 
+  
+  if (num % 5 === 0 && num % 3 === 0) {
+    return "FizzBuzz";
+  } 
+  return num;
+}
 
+function fizzyAlt1(num) {
+  if (num & 3 === 0 && num % 5 === 0) {
+    return "FizzBuzz";
+  } else if (num % 3 === 0) {
+    return "Fizz";
+  } else if (num % 5 === 0) {
+    return "Buzz";
+  } else {
+    return num;
+  }
+}
 
+function fixTheLamp() {
+  if (lampNotWorking) {
+    plugin()
 
+    if (lampNowW)
+  } else if (bulbBurntOut) {
+    replaceBulb()
+  
+    return;
+}
 
 
 
